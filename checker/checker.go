@@ -55,7 +55,7 @@ func dialSync(ports, result chan int, address, networkType string) {
 		}
 		err = conn.Close()
 		if err != nil {
-			// Skip error
+			fmt.Println("Error closed ", err)
 			continue
 		}
 	}
